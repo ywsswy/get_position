@@ -118,9 +118,9 @@ label3.setGeometry(0,36,200,18)
 label3.setPalette(palette3);
 
 hk_stop = SystemHotkey()
-hk_stop.register(('control', '1'), callback=lambda x: CalDis())
-hk_stop.register(('control', '2'), callback=lambda x: StartLine())
-hk_stop.register(('control', '3'), callback=lambda x: EndLine())
+hk_stop.register(('control', 'alt', '1'), callback=lambda x: CalDis())
+hk_stop.register(('control', 'alt', '2'), callback=lambda x: StartLine())
+hk_stop.register(('control', 'alt', '3'), callback=lambda x: EndLine())
 #hk_stop.register(('control', '4'), callback=lambda x: Align())
 win.show()
 
